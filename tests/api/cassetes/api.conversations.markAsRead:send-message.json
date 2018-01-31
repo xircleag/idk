@@ -1,0 +1,58 @@
+[
+  {
+    "scope": "https://api.layer.com:443",
+    "method": "post",
+    "path": "/apps/72b74c56-f018-11e7-b67e-f39a3e9bd19e/conversations/07bc7c1e-d04b-498e-ac55-43f46156e43c/messages",
+    "body": {
+      "sender_id": "layer:///identities/123",
+      "parts": [
+        {
+          "mime_type": "text/plain",
+          "body": "hello world"
+        }
+      ]
+    },
+    "status": 201,
+    "response": {
+      "channel": null,
+      "conversation": {
+        "id": "layer:///conversations/07bc7c1e-d04b-498e-ac55-43f46156e43c",
+        "url": "https://api.layer.com/apps/72b74c56-f018-11e7-b67e-f39a3e9bd19e/conversations/07bc7c1e-d04b-498e-ac55-43f46156e43c"
+      },
+      "url": "https://api.layer.com/apps/72b74c56-f018-11e7-b67e-f39a3e9bd19e/conversations/07bc7c1e-d04b-498e-ac55-43f46156e43c/messages/1f16d97e-5302-47eb-9623-3715639735c1",
+      "sent_at": "2018-01-05T22:58:57.219Z",
+      "id": "layer:///messages/1f16d97e-5302-47eb-9623-3715639735c1",
+      "recipient_status": {
+        "layer:///identities/123": "read"
+      },
+      "sender": {
+        "url": "https://api.layer.com/apps/72b74c56-f018-11e7-b67e-f39a3e9bd19e/users/123/identity",
+        "display_name": "Foo Bar",
+        "user_id": "123",
+        "id": "layer:///identities/123",
+        "avatar_url": null
+      },
+      "parts": [
+        {
+          "body": "hello world",
+          "encoding": null,
+          "id": "layer:///messages/1f16d97e-5302-47eb-9623-3715639735c1/parts/d9572afb-95e5-4a07-bfc9-b9c3fa111550",
+          "mime_type": "text/plain",
+          "content": null
+        }
+      ]
+    },
+    "rawHeaders": [
+      "Server",
+      "nginx/1.10.1",
+      "Date",
+      "Fri, 05 Jan 2018 22:58:57 GMT",
+      "Content-Type",
+      "application/json; charset=UTF-8",
+      "Content-Length",
+      "931",
+      "Connection",
+      "close"
+    ]
+  }
+]

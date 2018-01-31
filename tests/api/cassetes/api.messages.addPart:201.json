@@ -1,0 +1,34 @@
+[
+  {
+    "scope": "https://api.layer.com:443",
+    "method": "post",
+    "path": "/apps/72b74c56-f018-11e7-b67e-f39a3e9bd19e/conversations/4a5e0b9c-f808-4811-9a03-1cbc40348426/messages/f3e5f2b7-6086-4866-a42b-dec15bc53d5c/parts",
+    "body": {
+      "mime_type": "text/plain",
+      "body": "hello world"
+    },
+    "status": 201,
+    "response": {
+      "id": "layer:///messages/f3e5f2b7-6086-4866-a42b-dec15bc53d5c/parts/146dad8f-0f12-478c-8070-6a4b3ca49835",
+      "url": "https://api.layer.com/apps/72b74c56-f018-11e7-b67e-f39a3e9bd19e/conversations/4a5e0b9c-f808-4811-9a03-1cbc40348426/messages/f3e5f2b7-6086-4866-a42b-dec15bc53d5c/parts/146dad8f-0f12-478c-8070-6a4b3ca49835",
+      "message_url": "https://api.layer.com/apps/72b74c56-f018-11e7-b67e-f39a3e9bd19e/conversations/4a5e0b9c-f808-4811-9a03-1cbc40348426/messages/f3e5f2b7-6086-4866-a42b-dec15bc53d5c",
+      "mime_type": "text/plain",
+      "body": "hello world",
+      "encoding": null,
+      "content": null,
+      "updated_at": "2018-01-12T19:58:20.750Z"
+    },
+    "rawHeaders": [
+      "Server",
+      "nginx/1.10.1",
+      "Date",
+      "Fri, 12 Jan 2018 19:58:20 GMT",
+      "Content-Type",
+      "application/json; charset=UTF-8",
+      "Content-Length",
+      "612",
+      "Connection",
+      "close"
+    ]
+  }
+]

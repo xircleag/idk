@@ -1,0 +1,40 @@
+[
+  {
+    "scope": "https://api.layer.com:443",
+    "method": "get",
+    "path": "/apps/72b74c56-f018-11e7-b67e-f39a3e9bd19e/conversations/07bc7c1e-d04b-498e-ac55-43f46156e43c",
+    "body": "",
+    "status": 200,
+    "response": {
+      "url": "https://api.layer.com/apps/72b74c56-f018-11e7-b67e-f39a3e9bd19e/conversations/07bc7c1e-d04b-498e-ac55-43f46156e43c",
+      "participants": [
+        {
+          "url": "https://api.layer.com/apps/72b74c56-f018-11e7-b67e-f39a3e9bd19e/users/123/identity",
+          "display_name": "Foo Bar",
+          "user_id": "123",
+          "id": "layer:///identities/123",
+          "avatar_url": null
+        }
+      ],
+      "id": "layer:///conversations/07bc7c1e-d04b-498e-ac55-43f46156e43c",
+      "distinct": false,
+      "metadata": {
+        "foo": "bar"
+      },
+      "created_at": "2018-01-05T22:58:55.349Z",
+      "messages_url": "https://api.layer.com/apps/72b74c56-f018-11e7-b67e-f39a3e9bd19e/conversations/07bc7c1e-d04b-498e-ac55-43f46156e43c/messages"
+    },
+    "rawHeaders": [
+      "Server",
+      "nginx/1.10.1",
+      "Date",
+      "Fri, 05 Jan 2018 22:58:55 GMT",
+      "Content-Type",
+      "application/json; charset=UTF-8",
+      "Content-Length",
+      "614",
+      "Connection",
+      "close"
+    ]
+  }
+]

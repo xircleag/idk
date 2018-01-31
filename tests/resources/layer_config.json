@@ -1,0 +1,17 @@
+{
+  "app_id": "layer:///apps/staging/72b74c56-f018-11e7-b67e-f39a3e9bd19e",
+  "provider": "aws",
+  "service_name": "test-service",
+  "webhook": {
+    "secret": "test",
+    "events": ["Message.created"]
+  },
+  "api": {
+    "token": "secretoken",
+    "permissions": []
+  },
+  "pagerduty": {
+    "api_key": "fake-key",
+    "integration_key": "fake-key2"
+  }
+}

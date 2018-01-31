@@ -1,0 +1,24 @@
+{
+  "headers": {
+    "CloudFront-Forwarded-Proto": "https",
+    "CloudFront-Is-Desktop-Viewer": "true",
+    "CloudFront-Is-Mobile-Viewer": "false",
+    "CloudFront-Is-SmartTV-Viewer": "false",
+    "CloudFront-Is-Tablet-Viewer": "false",
+    "CloudFront-Viewer-Country": "US",
+    "Content-Type": "application/vnd.layer.webhooks+json; version=2.0",
+    "Host": "3x9hlez9d0.execute-api.us-east-1.amazonaws.com",
+    "layer-webhook-event-type": "Message.created",
+    "layer-webhook-id": "layer:///apps/9ec30af8-5591-11e4-af9e-f7a201004a3b/webhooks/15245f49-b108-47d7-979c-195aee86ea55",
+    "layer-webhook-request-id": "36b614ce-e73a-4596-ab76-146644fae418",
+    "layer-webhook-signature": "5fb734a8458a0cb338fd77e34db4a6a3d0a7ed34",
+    "User-Agent": "layer-webhooks/1.0",
+    "Via": "1.1 e200c7b587a33b4fb196671e961b895c.cloudfront.net (CloudFront)",
+    "X-Amz-Cf-Id": "-x1XgbmkcQyLKXbEDl42ruIummhBPGVOHIyMP79aUCO4BrnSAjdvBg==",
+    "X-Amzn-Trace-Id": "Root=1-59839db5-4767b23a6de47dcb04c0ade1",
+    "X-Forwarded-For": "35.184.101.113, 54.182.238.11",
+    "X-Forwarded-Port": "443",
+    "X-Forwarded-Proto": "https"
+  },
+  "body": "{\"event\":{\"id\":\"36b614ce-e73a-4596-ab76-146644fae418\",\"type\":\"Message.created\",\"created_at\":\"2017-08-03T22:03:33.816Z\"},\"actor\":{\"id\":\"layer:///identities/1b172c0f-8911-4d22-bdc4-0d804c67ee9d\",\"url\":\"https://api.layer.com/apps/9ec30af8-5591-11e4-af9e-f7a201004a3b/identities/1b172c0f-8911-4d22-bdc4-0d804c67ee9d\",\"user_id\":\"1b172c0f-8911-4d22-bdc4-0d804c67ee9d\",\"display_name\":\"Nil Gradisnik\",\"avatar_url\":\"https://layer.com/images/about/people/Nil%20Gradisnik.jpg\"},\"message\":{\"id\":\"layer:///messages/36b614ce-e73a-4596-ab76-146644fae418\",\"url\":\"https://api.layer.com/apps/9ec30af8-5591-11e4-af9e-f7a201004a3b/conversations/f88d74b1-72f5-4e08-b466-231aa5f82309/messages/36b614ce-e73a-4596-ab76-146644fae418\",\"conversation\":{\"id\":\"layer:///conversations/f88d74b1-72f5-4e08-b466-231aa5f82309\",\"url\":\"https://api.layer.com/apps/9ec30af8-5591-11e4-af9e-f7a201004a3b/conversations/f88d74b1-72f5-4e08-b466-231aa5f82309\"},\"parts\":[{\"id\":\"layer:///messages/36b614ce-e73a-4596-ab76-146644fae418/parts/d8158a8b-6da2-42c5-8fbc-cf43c270e217\",\"url\":\"https://api.layer.com/messages/36b614ce-e73a-4596-ab76-146644fae418/parts/d8158a8b-6da2-42c5-8fbc-cf43c270e217\",\"mime_type\":\"text/plain\",\"body\":\"pong\"}],\"sent_at\":\"2017-08-03T22:03:33.816Z\",\"sender\":{\"id\":\"layer:///identities/1b172c0f-8911-4d22-bdc4-0d804c67ee9d\",\"url\":\"https://api.layer.com/apps/9ec30af8-5591-11e4-af9e-f7a201004a3b/identities/1b172c0f-8911-4d22-bdc4-0d804c67ee9d\",\"user_id\":\"1b172c0f-8911-4d22-bdc4-0d804c67ee9d\",\"display_name\":\"Nil Gradisnik\",\"avatar_url\":\"https://layer.com/images/about/people/Nil%20Gradisnik.jpg\"},\"recipient_status\":{\"layer:///identities/1b172c0f-8911-4d22-bdc4-0d804c67ee9d\":\"read\",\"layer:///identities/490e0c39-d498-4f81-a73e-ff281f832bdd\":\"sent\"},\"position\":177831018496}}"
+}

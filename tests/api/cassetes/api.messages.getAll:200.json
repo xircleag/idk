@@ -1,0 +1,101 @@
+[
+  {
+    "scope": "https://api.layer.com:443",
+    "method": "get",
+    "path": "/apps/72b74c56-f018-11e7-b67e-f39a3e9bd19e/conversations/4a5e0b9c-f808-4811-9a03-1cbc40348426/messages",
+    "body": "",
+    "status": 200,
+    "response": [
+      {
+        "id": "layer:///messages/f3e5f2b7-6086-4866-a42b-dec15bc53d5c",
+        "url": "https://api.layer.com/apps/72b74c56-f018-11e7-b67e-f39a3e9bd19e/conversations/4a5e0b9c-f808-4811-9a03-1cbc40348426/messages/f3e5f2b7-6086-4866-a42b-dec15bc53d5c",
+        "receipts_url": null,
+        "position": 7008288768,
+        "conversation": {
+          "id": "layer:///conversations/4a5e0b9c-f808-4811-9a03-1cbc40348426",
+          "url": "https://api.layer.com/apps/72b74c56-f018-11e7-b67e-f39a3e9bd19e/conversations/4a5e0b9c-f808-4811-9a03-1cbc40348426"
+        },
+        "parts": [
+          {
+            "id": "layer:///messages/f3e5f2b7-6086-4866-a42b-dec15bc53d5c/parts/c80a7b4e-7c9c-4eba-95c8-703d870ec224",
+            "url": "https://api.layer.com/apps/72b74c56-f018-11e7-b67e-f39a3e9bd19e/conversations/4a5e0b9c-f808-4811-9a03-1cbc40348426/messages/f3e5f2b7-6086-4866-a42b-dec15bc53d5c/parts/c80a7b4e-7c9c-4eba-95c8-703d870ec224",
+            "message_url": "https://api.layer.com/apps/72b74c56-f018-11e7-b67e-f39a3e9bd19e/conversations/4a5e0b9c-f808-4811-9a03-1cbc40348426/messages/f3e5f2b7-6086-4866-a42b-dec15bc53d5c",
+            "mime_type": "text/plain",
+            "body": "hello world",
+            "encoding": null,
+            "content": null,
+            "updated_at": null
+          }
+        ],
+        "sent_at": "2018-01-05T22:59:25.540Z",
+        "sender": {
+          "id": "layer:///identities/idk-test-13",
+          "url": "https://api.layer.com/apps/72b74c56-f018-11e7-b67e-f39a3e9bd19e/users/idk-test-13/identity",
+          "user_id": "idk-test-13",
+          "display_name": "IDK test user",
+          "avatar_url": null
+        },
+        "is_unread": null,
+        "received_at": null,
+        "recipient_status": {
+          "layer:///identities/idk-test-13": "read"
+        },
+        "reply_to": null,
+        "notification": null,
+        "updated_at": null
+      },
+      {
+        "id": "layer:///messages/c74896c2-3dba-4b5b-8bee-2084c53db166",
+        "url": "https://api.layer.com/apps/72b74c56-f018-11e7-b67e-f39a3e9bd19e/conversations/4a5e0b9c-f808-4811-9a03-1cbc40348426/messages/c74896c2-3dba-4b5b-8bee-2084c53db166",
+        "receipts_url": null,
+        "position": 2713321472,
+        "conversation": {
+          "id": "layer:///conversations/4a5e0b9c-f808-4811-9a03-1cbc40348426",
+          "url": "https://api.layer.com/apps/72b74c56-f018-11e7-b67e-f39a3e9bd19e/conversations/4a5e0b9c-f808-4811-9a03-1cbc40348426"
+        },
+        "parts": [
+          {
+            "id": "layer:///messages/c74896c2-3dba-4b5b-8bee-2084c53db166/parts/93b5ed32-1db8-46a1-9222-455efde65715",
+            "url": "https://api.layer.com/apps/72b74c56-f018-11e7-b67e-f39a3e9bd19e/conversations/4a5e0b9c-f808-4811-9a03-1cbc40348426/messages/c74896c2-3dba-4b5b-8bee-2084c53db166/parts/93b5ed32-1db8-46a1-9222-455efde65715",
+            "message_url": "https://api.layer.com/apps/72b74c56-f018-11e7-b67e-f39a3e9bd19e/conversations/4a5e0b9c-f808-4811-9a03-1cbc40348426/messages/c74896c2-3dba-4b5b-8bee-2084c53db166",
+            "mime_type": "text/plain",
+            "body": "hello world",
+            "encoding": null,
+            "content": null,
+            "updated_at": null
+          }
+        ],
+        "sent_at": "2018-01-05T22:58:49.714Z",
+        "sender": {
+          "id": "layer:///identities/idk-test-13",
+          "url": "https://api.layer.com/apps/72b74c56-f018-11e7-b67e-f39a3e9bd19e/users/idk-test-13/identity",
+          "user_id": "idk-test-13",
+          "display_name": "IDK test user",
+          "avatar_url": null
+        },
+        "is_unread": null,
+        "received_at": null,
+        "recipient_status": {
+          "layer:///identities/idk-test-13": "read"
+        },
+        "reply_to": null,
+        "notification": null,
+        "updated_at": null
+      }
+    ],
+    "rawHeaders": [
+      "Server",
+      "nginx/1.10.1",
+      "Date",
+      "Fri, 12 Jan 2018 19:56:55 GMT",
+      "Content-Type",
+      "application/json; charset=UTF-8",
+      "Content-Length",
+      "2989",
+      "Connection",
+      "close",
+      "layer-count",
+      "2"
+    ]
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "scope": "https://api.layer.com:443",
+    "method": "get",
+    "path": "/apps/72b74c56-f018-11e7-b67e-f39a3e9bd19e/users/idk-test-13-new/identity",
+    "body": "",
+    "status": 200,
+    "response": {
+      "first_name": null,
+      "phone_number": null,
+      "email_address": null,
+      "url": "https://api.layer.com/apps/72b74c56-f018-11e7-b67e-f39a3e9bd19e/users/idk-test-13-new/identity",
+      "display_name": "IDK test user new",
+      "identity_type": "user",
+      "public_key": null,
+      "user_id": "idk-test-13-new",
+      "id": "layer:///identities/idk-test-13-new",
+      "last_name": null,
+      "metadata": {
+        "foo": "bar"
+      },
+      "avatar_url": null
+    },
+    "rawHeaders": [
+      "Server",
+      "nginx/1.10.1",
+      "Date",
+      "Fri, 05 Jan 2018 22:58:59 GMT",
+      "Content-Type",
+      "application/json; charset=UTF-8",
+      "Content-Length",
+      "370",
+      "Connection",
+      "close"
+    ]
+  }
+]

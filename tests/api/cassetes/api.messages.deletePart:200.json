@@ -1,0 +1,113 @@
+[
+  {
+    "scope": "https://api.layer.com:443",
+    "method": "post",
+    "path": "/apps/72b74c56-f018-11e7-b67e-f39a3e9bd19e/conversations/4a5e0b9c-f808-4811-9a03-1cbc40348426/messages/f3e5f2b7-6086-4866-a42b-dec15bc53d5c/parts",
+    "body": {
+      "mime_type": "text/plain",
+      "body": "hello world"
+    },
+    "status": 201,
+    "response": {
+      "id": "layer:///messages/f3e5f2b7-6086-4866-a42b-dec15bc53d5c/parts/8cbd0461-880d-4066-903d-14e424952fa9",
+      "url": "https://api.layer.com/apps/72b74c56-f018-11e7-b67e-f39a3e9bd19e/conversations/4a5e0b9c-f808-4811-9a03-1cbc40348426/messages/f3e5f2b7-6086-4866-a42b-dec15bc53d5c/parts/8cbd0461-880d-4066-903d-14e424952fa9",
+      "message_url": "https://api.layer.com/apps/72b74c56-f018-11e7-b67e-f39a3e9bd19e/conversations/4a5e0b9c-f808-4811-9a03-1cbc40348426/messages/f3e5f2b7-6086-4866-a42b-dec15bc53d5c",
+      "mime_type": "text/plain",
+      "body": "hello world",
+      "encoding": null,
+      "content": null,
+      "updated_at": "2018-01-12T20:21:20.792Z"
+    },
+    "rawHeaders": [
+      "Server",
+      "nginx/1.10.1",
+      "Date",
+      "Fri, 12 Jan 2018 20:21:20 GMT",
+      "Content-Type",
+      "application/json; charset=UTF-8",
+      "Content-Length",
+      "612",
+      "Connection",
+      "close"
+    ]
+  },
+  {
+    "scope": "https://api.layer.com:443",
+    "method": "get",
+    "path": "/apps/72b74c56-f018-11e7-b67e-f39a3e9bd19e/conversations/4a5e0b9c-f808-4811-9a03-1cbc40348426/messages/f3e5f2b7-6086-4866-a42b-dec15bc53d5c/parts",
+    "body": "",
+    "status": 200,
+    "response": [
+      {
+        "id": "layer:///messages/f3e5f2b7-6086-4866-a42b-dec15bc53d5c/parts/f6daae27-076a-4427-ac72-1f59efdbf924",
+        "url": "https://api.layer.com/apps/72b74c56-f018-11e7-b67e-f39a3e9bd19e/conversations/4a5e0b9c-f808-4811-9a03-1cbc40348426/messages/f3e5f2b7-6086-4866-a42b-dec15bc53d5c/parts/f6daae27-076a-4427-ac72-1f59efdbf924",
+        "message_url": "https://api.layer.com/apps/72b74c56-f018-11e7-b67e-f39a3e9bd19e/conversations/4a5e0b9c-f808-4811-9a03-1cbc40348426/messages/f3e5f2b7-6086-4866-a42b-dec15bc53d5c",
+        "mime_type": "text/plain",
+        "body": "hello world 1",
+        "encoding": null,
+        "content": null,
+        "updated_at": "2018-01-12T20:16:31.878Z"
+      },
+      {
+        "id": "layer:///messages/f3e5f2b7-6086-4866-a42b-dec15bc53d5c/parts/7458cc7a-6625-47bb-80b7-23acfda79f23",
+        "url": "https://api.layer.com/apps/72b74c56-f018-11e7-b67e-f39a3e9bd19e/conversations/4a5e0b9c-f808-4811-9a03-1cbc40348426/messages/f3e5f2b7-6086-4866-a42b-dec15bc53d5c/parts/7458cc7a-6625-47bb-80b7-23acfda79f23",
+        "message_url": "https://api.layer.com/apps/72b74c56-f018-11e7-b67e-f39a3e9bd19e/conversations/4a5e0b9c-f808-4811-9a03-1cbc40348426/messages/f3e5f2b7-6086-4866-a42b-dec15bc53d5c",
+        "mime_type": "text/plain",
+        "body": "hello world 2",
+        "encoding": null,
+        "content": null,
+        "updated_at": "2018-01-12T20:16:31.878Z"
+      },
+      {
+        "id": "layer:///messages/f3e5f2b7-6086-4866-a42b-dec15bc53d5c/parts/3a511531-2422-4467-8842-9c2260f19a44",
+        "url": "https://api.layer.com/apps/72b74c56-f018-11e7-b67e-f39a3e9bd19e/conversations/4a5e0b9c-f808-4811-9a03-1cbc40348426/messages/f3e5f2b7-6086-4866-a42b-dec15bc53d5c/parts/3a511531-2422-4467-8842-9c2260f19a44",
+        "message_url": "https://api.layer.com/apps/72b74c56-f018-11e7-b67e-f39a3e9bd19e/conversations/4a5e0b9c-f808-4811-9a03-1cbc40348426/messages/f3e5f2b7-6086-4866-a42b-dec15bc53d5c",
+        "mime_type": "text/plain",
+        "body": "hello world 3",
+        "encoding": null,
+        "content": null,
+        "updated_at": "2018-01-12T20:16:31.878Z"
+      },
+      {
+        "id": "layer:///messages/f3e5f2b7-6086-4866-a42b-dec15bc53d5c/parts/8cbd0461-880d-4066-903d-14e424952fa9",
+        "url": "https://api.layer.com/apps/72b74c56-f018-11e7-b67e-f39a3e9bd19e/conversations/4a5e0b9c-f808-4811-9a03-1cbc40348426/messages/f3e5f2b7-6086-4866-a42b-dec15bc53d5c/parts/8cbd0461-880d-4066-903d-14e424952fa9",
+        "message_url": "https://api.layer.com/apps/72b74c56-f018-11e7-b67e-f39a3e9bd19e/conversations/4a5e0b9c-f808-4811-9a03-1cbc40348426/messages/f3e5f2b7-6086-4866-a42b-dec15bc53d5c",
+        "mime_type": "text/plain",
+        "body": "hello world",
+        "encoding": null,
+        "content": null,
+        "updated_at": "2018-01-12T20:21:20.796Z"
+      }
+    ],
+    "rawHeaders": [
+      "Server",
+      "nginx/1.10.1",
+      "Date",
+      "Fri, 12 Jan 2018 20:21:20 GMT",
+      "Content-Type",
+      "application/json; charset=UTF-8",
+      "Content-Length",
+      "2459",
+      "Connection",
+      "close"
+    ]
+  },
+  {
+    "scope": "https://api.layer.com:443",
+    "method": "delete",
+    "path": "/apps/72b74c56-f018-11e7-b67e-f39a3e9bd19e/conversations/4a5e0b9c-f808-4811-9a03-1cbc40348426/messages/f3e5f2b7-6086-4866-a42b-dec15bc53d5c/parts/8cbd0461-880d-4066-903d-14e424952fa9",
+    "body": "",
+    "status": 204,
+    "response": "",
+    "rawHeaders": [
+      "Server",
+      "nginx/1.10.1",
+      "Date",
+      "Fri, 12 Jan 2018 20:21:21 GMT",
+      "Content-Length",
+      "0",
+      "Connection",
+      "close"
+    ]
+  }
+]

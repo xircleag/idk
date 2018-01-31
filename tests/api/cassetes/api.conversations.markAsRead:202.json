@@ -1,0 +1,26 @@
+[
+  {
+    "scope": "https://api.layer.com:443",
+    "method": "post",
+    "path": "/apps/72b74c56-f018-11e7-b67e-f39a3e9bd19e/users/123/conversations/07bc7c1e-d04b-498e-ac55-43f46156e43c/mark_all_read",
+    "body": {
+      "position": null
+    },
+    "status": 202,
+    "response": {
+      "position": 12277645312
+    },
+    "rawHeaders": [
+      "Server",
+      "nginx/1.10.1",
+      "Date",
+      "Fri, 05 Jan 2018 22:58:57 GMT",
+      "Content-Type",
+      "application/json; charset=UTF-8",
+      "Content-Length",
+      "24",
+      "Connection",
+      "close"
+    ]
+  }
+]

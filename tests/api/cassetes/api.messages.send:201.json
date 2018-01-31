@@ -1,0 +1,58 @@
+[
+  {
+    "scope": "https://api.layer.com:443",
+    "method": "post",
+    "path": "/apps/72b74c56-f018-11e7-b67e-f39a3e9bd19e/conversations/4a5e0b9c-f808-4811-9a03-1cbc40348426/messages",
+    "body": {
+      "sender_id": "layer:///identities/idk-test-13",
+      "parts": [
+        {
+          "mime_type": "text/plain",
+          "body": "hello world"
+        }
+      ]
+    },
+    "status": 201,
+    "response": {
+      "channel": null,
+      "conversation": {
+        "id": "layer:///conversations/4a5e0b9c-f808-4811-9a03-1cbc40348426",
+        "url": "https://api.layer.com/apps/72b74c56-f018-11e7-b67e-f39a3e9bd19e/conversations/4a5e0b9c-f808-4811-9a03-1cbc40348426"
+      },
+      "url": "https://api.layer.com/apps/72b74c56-f018-11e7-b67e-f39a3e9bd19e/conversations/4a5e0b9c-f808-4811-9a03-1cbc40348426/messages/f3e5f2b7-6086-4866-a42b-dec15bc53d5c",
+      "sent_at": "2018-01-05T22:59:25.540Z",
+      "id": "layer:///messages/f3e5f2b7-6086-4866-a42b-dec15bc53d5c",
+      "recipient_status": {
+        "layer:///identities/idk-test-13": "read"
+      },
+      "sender": {
+        "url": "https://api.layer.com/apps/72b74c56-f018-11e7-b67e-f39a3e9bd19e/users/idk-test-13/identity",
+        "display_name": "IDK test user",
+        "user_id": "idk-test-13",
+        "id": "layer:///identities/idk-test-13",
+        "avatar_url": null
+      },
+      "parts": [
+        {
+          "body": "hello world",
+          "encoding": null,
+          "id": "layer:///messages/f3e5f2b7-6086-4866-a42b-dec15bc53d5c/parts/c80a7b4e-7c9c-4eba-95c8-703d870ec224",
+          "mime_type": "text/plain",
+          "content": null
+        }
+      ]
+    },
+    "rawHeaders": [
+      "Server",
+      "nginx/1.10.1",
+      "Date",
+      "Fri, 05 Jan 2018 22:59:25 GMT",
+      "Content-Type",
+      "application/json; charset=UTF-8",
+      "Content-Length",
+      "969",
+      "Connection",
+      "close"
+    ]
+  }
+]
