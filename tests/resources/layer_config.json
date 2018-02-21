@@ -13,5 +13,8 @@
   "pagerduty": {
     "api_key": "fake-key",
     "integration_key": "fake-key2"
+  },
+  "sentry": {
+    "dsn": "https://******@sentry.io/*****"
   }
 }

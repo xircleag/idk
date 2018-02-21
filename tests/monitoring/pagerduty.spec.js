@@ -1,10 +1,30 @@
 /* global describe it  */
 
+const sinon = require('sinon')
+const axios = require('axios')
 const config = require('../resources/layer_config.json')
 
 const PagerDuty = require('../../src/monitoring/pagerduty')
 
 describe('PagerDuty', () => {
+  describe('Constructor', () => {
+    it('should invoke pagerduty API with the correct key', () => {
+      const axiosCreateSpy = sinon.spy(axios, 'create')
+      const pd = new PagerDuty(config, [])
+
+      axiosCreateSpy.callCount.should.be.eql(1)
+      axiosCreateSpy.calledWith({
+        baseURL: 'https://events.pagerduty.com/v2',
+        timeout: 6000,
+        headers: {
+          'Accept': 'application/vnd.pagerduty+json;version=2',
+          'Content-Type': 'application/json',
+          'Authorization': 'Token token=' + config.pagerduty.api_key
+        }
+      }).should.be.eql(true)
+    })
+  })
+
   describe('_payload warning', () => {
     const pd = new PagerDuty(config, [])
 

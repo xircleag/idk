@@ -20,6 +20,7 @@
     "mocha": "^3.5.0",
     "nock-vcr-recorder": "layerhq/nock-vcr-recorder#c73ed12",
     "should": "^11.2.1",
+    "sinon": "^4.3.0",
     "standard": "^10.0.2"
   }
 }
