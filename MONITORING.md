@@ -1,19 +1,12 @@
 ## Monitoring
 
-Logger has a built in monitoring capabilities using [PagerDuty](https://www.pagerduty.com/) API. It is enabled **only** if PagerDuty credentials are present in config as part of [initialization](/README.md#initialization).
-
-```json
-{
-  "pagerduty": {
-    "api_key": "API_KEY",
-    "integration_key": "INTEGRATION_KEY"
-  }
-}
-```
-
-When enabled it will publish events **only** when `warn` and `error` log levels are triggered.
+Logger has a built in monitoring capabilities. When enabled it will publish events **only** when `warn` and `error` log levels are triggered. It will look for service credentials present in configuration as part of [initialization](/README.md#initialization).
 
 ### PagerDuty
+
+[PagerDuty](https://www.pagerduty.com/) service can be enabled from [layer-integrations](https://github.com/layerhq/layer-integrations) CLI:
+
+    layer-integrations deploy --pagerduty
 
 PagerDuty [events](https://v2.developer.pagerduty.com/docs/events-api-v2) will be sent with a `trigger` action using the following payload:
 
@@ -32,3 +25,9 @@ PagerDuty [events](https://v2.developer.pagerduty.com/docs/events-api-v2) will b
 ```
 
 All this information should help identify which integration triggered an alert.
+
+### Sentry
+
+[Sentry](https://sentry.io) service can be enabled from [layer-integrations](https://github.com/layerhq/layer-integrations) CLI:
+
+    layer-integrations deploy --sentry
