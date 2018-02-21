@@ -1,4 +1,5 @@
 # Layer IDK
+[![npm version](http://img.shields.io/npm/v/@layerhq/idk.svg)](https://npmjs.org/package/@layerhq/idk)
 [![Build Status](https://circleci.com/gh/layerhq/idk.png?circle-token=6240fae3391dc4c5e37b06ef8494c9dd47350d07)](https://circleci.com/gh/layerhq/idk)
 
 This is a Node.js library that is designed to be used with Layer [Integration Development Kit](https://preview-docs.layer.com/reference/integrations/framework) (IDK).

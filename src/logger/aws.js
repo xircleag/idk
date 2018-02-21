@@ -10,10 +10,10 @@ module.exports = class LoggerAWS {
    *
    * @return {object} Loger functions for each level
    */
-  constructor (service, logger, pagerduty) {
+  constructor (service, logger, monitoring) {
     this.service = service
     this.logger = logger
-    this.pagerduty = pagerduty
+    this.monitoring = monitoring
   }
 
   debug (message, params) {
@@ -32,14 +32,14 @@ module.exports = class LoggerAWS {
     if (level > 2) return
 
     this.logger.warn(this._formatMessage(message), params || '')
-    if (this.pagerduty) this.pagerduty.warning(message, params)
+    if (this.monitoring) this.monitoring.warning(message, params)
   }
 
   error (message, params) {
     if (level > 3) return
 
     this.logger.error(this._formatMessage(message), params || '')
-    if (this.pagerduty) this.pagerduty.critical(message, params)
+    if (this.monitoring) this.monitoring.error(message, params)
   }
 
   _formatMessage (message) {

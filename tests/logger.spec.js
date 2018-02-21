@@ -40,8 +40,8 @@ describe('Logger', () => {
   })
 
   describe('Azure context', () => {
-    config.provider = 'azure'
-    const layerIDK = new LayerIDK(config)
+    const azureConfig = Object.assign({ provider: 'azure'}, config)
+    const layerIDK = new LayerIDK(azureConfig)
     const log = layerIDK.logger(context.azure)
 
     it('should log.debug', () => {

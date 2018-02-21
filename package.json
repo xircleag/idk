@@ -6,14 +6,15 @@
   "license": "Apache-2.0",
   "repository": "layerhq/idk",
   "scripts": {
-    "test": "LOG_LEVEL=none mocha --require should --bail tests/*spec.js tests/api/*spec.js",
+    "test": "LOG_LEVEL=none mocha --require should --bail tests/*spec.js tests/api/*spec.js tests/monitoring/*spec.js",
     "test:seed": "node tests/api/seed",
     "test:cleanup": "rm -fr tests/api/cassetes/",
     "test:standard": "standard -v"
   },
   "dependencies": {
     "axios": "^0.16.2",
-    "media-type": "^0.3.1"
+    "media-type": "^0.3.1",
+    "raven": "^2.4.1"
   },
   "devDependencies": {
     "mocha": "^3.5.0",
