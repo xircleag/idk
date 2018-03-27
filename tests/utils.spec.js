@@ -36,6 +36,16 @@ describe('Utils', () => {
     })
   })
 
+  describe('parseMimeType method', function () {
+    it('should return parsed mime type object', () => {
+      const result = LayerIDK.parseMimeType('application/vnd.layer.text+json; role=root')
+      result.type.should.eql('application')
+      result.subtype.should.eql('vnd.layer.text')
+      result.suffix.should.eql('json')
+      result.parameters.should.eql({ role: 'root'})
+    })
+  })
+
   describe('filterMessageParts method', function () {
     it('should return message parts matching vnd.layer.text', () => {
       const parts = [

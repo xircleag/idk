@@ -68,7 +68,7 @@ module.exports = class Utils {
     if (!media.subtype) throw new Error('No media subtype to filter')
 
     return parts.filter((part) => {
-      const mt = mediaType.fromString(part.mime_type)
+      const mt = Utils.parseMimeType(part.mime_type)
       if (!mt.isValid()) return false
 
       if (mt.subtype !== media.subtype) return false
@@ -87,6 +87,17 @@ module.exports = class Utils {
   }
 
   /**
+   * Parse mime type string object
+   * https://github.com/lovell/media-type
+   *
+   * @param  {String} mimeType Layer message part mime_type
+   * @return {Object}          media-type object
+   */
+  static parseMimeType (mimeType) {
+    return mediaType.fromString(mimeType)
+  }
+
+  /**
    * Return the first text message part body
    * Matching text mime_type according to Layer XDK framework
    *
@@ -96,7 +107,7 @@ module.exports = class Utils {
   static getMessageText (message) {
     const media = { subtype: 'vnd.layer.text' }
     const parameters = { role: 'root' }
-    const parts = this.filterMessageParts(message.parts, media, parameters)
+    const parts = Utils.filterMessageParts(message.parts, media, parameters)
     return parts.length ? parts[0].body : null
   }
 }
