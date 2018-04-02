@@ -83,7 +83,7 @@ Available levels: `debug`, `info`, `warn`, `error`, `none`. Every level accepts 
 
 #### Monitoring
 
-Logger has a built in monitoring capabilities using PagerDuty. Read about [monitoring here](./MONITORING.md).
+Logger has a built in monitoring capabilities. Read about [monitoring here](./MONITORING.md).
 
 ## API
 
