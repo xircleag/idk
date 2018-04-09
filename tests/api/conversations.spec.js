@@ -14,7 +14,7 @@ let conversationId = null
 describe('API', () => {
   describe('conversations.create', () => {
     it('should create a new conversation', () => {
-      return vcr.useCassette('api.conversations.create:201', () => {
+      return vcr.useCassette('api.conversations.create_201', () => {
         const participants = ['123']
         const metadata = { foo: 'bar' }
         const distinct = false
@@ -30,7 +30,7 @@ describe('API', () => {
 
   describe('conversations.get', () => {
     it('should return conversation object', () => {
-      return vcr.useCassette('api.conversations.get:200', () => {
+      return vcr.useCassette('api.conversations.get_200', () => {
         return layerIDK.api.conversations.get(conversationId)
           .then(({ status, data }) => {
             status.should.be.eql(200)
@@ -42,7 +42,7 @@ describe('API', () => {
 
   describe('conversations.addParticipants', () => {
     it('should update conversation participants', () => {
-      return vcr.useCassette('api.conversations.addParticipants:204', () => {
+      return vcr.useCassette('api.conversations.addParticipants_204', () => {
         const participants = ['456']
         return layerIDK.api.conversations.addParticipants(conversationId, participants)
           .then(({ status }) => {
@@ -54,7 +54,7 @@ describe('API', () => {
 
   describe('conversations.removeParticipants', () => {
     it('should update conversation participants', () => {
-      return vcr.useCassette('api.conversations.removeParticipants:204', () => {
+      return vcr.useCassette('api.conversations.removeParticipants_204', () => {
         const participants = ['456']
         return layerIDK.api.conversations.removeParticipants(conversationId, participants)
           .then(({ status }) => {
@@ -66,7 +66,7 @@ describe('API', () => {
 
   describe('conversations.updateMetadata', () => {
     it('should update metadata if passed correctly', () => {
-      return vcr.useCassette('api.conversations.updateMetadata:204', () => {
+      return vcr.useCassette('api.conversations.updateMetadata_204', () => {
         const operations = [
           {
             'operation': 'set',
@@ -95,7 +95,7 @@ describe('API', () => {
 
   describe('conversations.markAsRead', () => {
     it('should send one message', () => {
-      return vcr.useCassette('api.conversations.markAsRead:send-message', () => {
+      return vcr.useCassette('api.conversations.markAsRead_201', () => {
         const userId = '123'
         const parts = [
           {
@@ -110,7 +110,7 @@ describe('API', () => {
       })
     })
     it('should update conversation participants', () => {
-      return vcr.useCassette('api.conversations.markAsRead:202', () => {
+      return vcr.useCassette('api.conversations.markAsRead_202', () => {
         const userId = '123'
         return layerIDK.api.conversations.markAsRead(conversationId, userId)
           .then(({ status }) => {
@@ -123,7 +123,7 @@ describe('API', () => {
 
   describe('conversations.delete', () => {
     it('should delete conversation if exists', () => {
-      return vcr.useCassette('api.conversations.delete:204', () => {
+      return vcr.useCassette('api.conversations.delete_204', () => {
         return layerIDK.api.conversations.delete(conversationId)
           .then(({ status }) => {
             status.should.be.eql(204)

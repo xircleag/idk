@@ -14,7 +14,7 @@ describe('API', () => {
   // user has to join this conversation first
   describe('messages.send', () => {
     it('should return 201', () => {
-      return vcr.useCassette('api.messages.send:201', () => {
+      return vcr.useCassette('api.messages.send_201', () => {
         const parts = [
           {
             mime_type: 'text/plain',
@@ -32,7 +32,7 @@ describe('API', () => {
 
   describe('messages.getAll', () => {
     it('should return 200', () => {
-      return vcr.useCassette('api.messages.getAll:200', () => {
+      return vcr.useCassette('api.messages.getAll_200', () => {
         return layerIDK.api.messages.getAll(seed.conversation_id)
           .then(({ status, data }) => {
             status.should.be.eql(200)
@@ -43,7 +43,7 @@ describe('API', () => {
 
   describe('messages.get', () => {
     it('should return 200', () => {
-      return vcr.useCassette('api.messages.get:200', () => {
+      return vcr.useCassette('api.messages.get_200', () => {
         const messageId = 'layer:///messages/f3e5f2b7-6086-4866-a42b-dec15bc53d5c'
         return layerIDK.api.messages.get(seed.conversation_id, messageId)
           .then(({ status, data }) => {
@@ -55,7 +55,7 @@ describe('API', () => {
 
   describe('messages.addPart', () => {
     it('should return 201', () => {
-      return vcr.useCassette('api.messages.addPart:201', () => {
+      return vcr.useCassette('api.messages.addPart_201', () => {
         const messageId = 'layer:///messages/f3e5f2b7-6086-4866-a42b-dec15bc53d5c'
         const part = {
           mime_type: 'text/plain',
@@ -71,7 +71,7 @@ describe('API', () => {
 
   describe('messages.getParts', () => {
     it('should return parts', () => {
-      return vcr.useCassette('api.messages.getParts:200', () => {
+      return vcr.useCassette('api.messages.getParts_200', () => {
         const messageId = 'layer:///messages/f3e5f2b7-6086-4866-a42b-dec15bc53d5c'
         const part = {
           mime_type: 'text/plain',
@@ -90,7 +90,7 @@ describe('API', () => {
 
   describe('messages.getPart', () => {
     it('should return part', () => {
-      return vcr.useCassette('api.messages.getPart:200', () => {
+      return vcr.useCassette('api.messages.getPart_200', () => {
         const messageId = 'layer:///messages/f3e5f2b7-6086-4866-a42b-dec15bc53d5c'
         const part = {
           mime_type: 'text/plain',
@@ -114,7 +114,7 @@ describe('API', () => {
 
   describe('messages.updatePart', () => {
     it('should update part', () => {
-      return vcr.useCassette('api.messages.updatePart:200', () => {
+      return vcr.useCassette('api.messages.updatePart_200', () => {
         const messageId = 'layer:///messages/f3e5f2b7-6086-4866-a42b-dec15bc53d5c'
         const part = {
           mime_type: 'text/plain',
@@ -143,7 +143,7 @@ describe('API', () => {
 
   describe('messages.replaceParts', () => {
     it('should replace part', () => {
-      return vcr.useCassette('api.messages.replaceParts:200', () => {
+      return vcr.useCassette('api.messages.replaceParts_200', () => {
         const messageId = 'layer:///messages/f3e5f2b7-6086-4866-a42b-dec15bc53d5c'
         const part = {
           mime_type: 'text/plain',
@@ -180,7 +180,7 @@ describe('API', () => {
 
   describe('messages.deletePart', () => {
     it('should delete part', () => {
-      return vcr.useCassette('api.messages.deletePart:200', () => {
+      return vcr.useCassette('api.messages.deletePart_200', () => {
         const messageId = 'layer:///messages/f3e5f2b7-6086-4866-a42b-dec15bc53d5c'
         const part = {
           mime_type: 'text/plain',
@@ -204,7 +204,7 @@ describe('API', () => {
 
   describe('messages.delete', () => {
     it('should delete the message', () => {
-      return vcr.useCassette('api.messages.delete:200', () => {
+      return vcr.useCassette('api.messages.delete_200', () => {
         const parts = [
           {
             mime_type: 'text/plain',

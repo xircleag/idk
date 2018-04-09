@@ -15,7 +15,7 @@ const NEW_USER = `${seed.user_id}-new`
 describe('API', () => {
   describe('identities.create', () => {
     it('should return 201 with no body', () => {
-      return vcr.useCassette('api.identities.create:201', () => {
+      return vcr.useCassette('api.identities.create_201', () => {
         const identity = {
           user_id: NEW_USER,
           display_name: 'IDK test user new',
@@ -33,7 +33,7 @@ describe('API', () => {
 
   describe('identities.get', () => {
     it('should return identity object', () => {
-      return vcr.useCassette('api.identities.get:200', () => {
+      return vcr.useCassette('api.identities.get_200', () => {
         return layerIDK.api.identities.get(NEW_USER)
           .then(({ status, data }) => {
             status.should.be.eql(200)
@@ -51,7 +51,7 @@ describe('API', () => {
 
   describe('identities.update', () => {
     it('should return 204 with no body', () => {
-      return vcr.useCassette('api.identities.update:204', () => {
+      return vcr.useCassette('api.identities.update_204', () => {
         const identity = {
           display_name: 'IDK Test User Name Updated',
           metadata: {
@@ -68,7 +68,7 @@ describe('API', () => {
 
   describe('identities.replace', () => {
     it('should return 204', () => {
-      return vcr.useCassette('api.identities.replace:204', () => {
+      return vcr.useCassette('api.identities.replace_204', () => {
         const TEST_USER = 'another_test_user'
         const identity = {
           user_id: TEST_USER,
@@ -96,7 +96,7 @@ describe('API', () => {
 
   describe('identities.delete', () => {
     it('should return 204', () => {
-      return vcr.useCassette('api.identities.delete:204', () => {
+      return vcr.useCassette('api.identities.delete_204', () => {
         const TEST_USER = 'another_test_user_1'
         const identity = {
           user_id: TEST_USER,
